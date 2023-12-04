@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(161, 161, 174);
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(30, 30, 194);
+    color: bisque;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(161, 161, 174);
+    display: flex;
+    flex-wrap: wrap;
+    align-items:start;
+    flex-direction: column;
+    padding-left: 20%; 
+}
+
+
+aside p{
+    margin: 2%;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    color: bisque;
+    background-color: rgb(30, 30, 194);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size:small
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "aside main"
+    "footer footer ";
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10%;
+
+}
+
+ .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card button{
+    color: bisque;;
+    width: 100%;
+    background-color: rgb(30, 30, 194);
+}
+
+
